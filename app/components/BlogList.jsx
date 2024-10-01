@@ -8,7 +8,7 @@ const BlogList = () => {
 
   return (
     <>
-      <div className="flex justify-center gap-6 my-8">
+      <div className="flex justify-center flex-wrap sm:flex-nowrap gap-6 my-8 ">
         <button
           onClick={() => setMenu("All")}
           className={`px-4 py-1 rounded-sm transition-opacity duration-500 ${
@@ -49,11 +49,12 @@ const BlogList = () => {
         </button>
       </div>
 
-      <div className="flex-wrap flex justify-around gap-1 gap-y-10 mb-16 xl:mx-24">
+      <div className="flex-wrap flex justify-around gap-1 px-2 sm:px-0 gap-y-10 mb-16 xl:mx-24">
         {blog_data.filter((item)=> menu === "All"?true:item.category === menu ).map((item) => {
           return (
             <Blogitem
               key={item.id}
+              id={item.id}
               description={item.description}
               category={item.category}
               image={item.image}
