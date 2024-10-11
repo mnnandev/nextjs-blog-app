@@ -31,4 +31,30 @@ body {
 .text-shadow {
   text-shadow: 0 4px 4px rgba(0, 0, 0, .15);
 }
+.scrollbar-hide::-webkit-scrollbar {
+display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+/* Scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.scroll-custom::-webkit-scrollbar {
+  width: 3px; /* Width of the scrollbar */
+  border-radius: 10px;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Rounded corners */
+}
+
+.scroll-custom::-webkit-scrollbar-track {
+}
+
+/* Scrollbar for Firefox */
+.scroll-custom {
+  scrollbar-width: thin; /* Makes scrollbar thinner */
+ 
+}
+
 

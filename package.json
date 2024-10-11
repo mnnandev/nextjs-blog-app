@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "axios": "^1.7.7",
+    "formik": "^2.4.6",
+    "lqip-modern": "^2.1.0",
     "mongoose": "^8.7.0",
-    "next": "14.2.13",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-toastify": "^10.0.5"
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-toastify": "^10.0.5",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "eslint": "^8",
